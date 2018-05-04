@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/img_ques_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/back"
+        />
+
+
+    <Spinner
+        android:id="@+id/spinner_question"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="140dp"
+        ></Spinner>
+
+    <ImageView
+        android:id="@+id/img_ques_my"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/myquestion"
+        />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_ques"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative"
+        android:numColumns="1"
+        >
+    </GridView>
+
+
+</RelativeLayout>

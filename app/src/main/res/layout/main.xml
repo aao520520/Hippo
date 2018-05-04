@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b7b6b6"
+        android:padding="2dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:padding="5dp"
+            android:layout_weight="6"
+            />
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/home_btn_select"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_page"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="12dp"
+                >
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:paddingTop="15dp"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/c"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/java"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/cpp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingTop="15dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#b7b6b6"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\t\t在线学习\t\t"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#b7b6b6"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                />
+    </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\t热门"
+                android:paddingTop="5dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多>>"
+                android:paddingTop="5dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_gravity="right" />
+        </GridLayout>
+
+
+        <GridView
+            android:id="@+id/grid_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:padding="12dp"
+            >
+        </GridView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#554444"
+                />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\t题库"
+                android:paddingTop="5dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多>>"
+                    android:paddingTop="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="right" />
+        </GridLayout>
+
+
+            <GridView
+                android:id="@+id/grid_main1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numColumns="4"
+
+                >
+            </GridView>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+</ScrollView>
+
+</RelativeLayout>
